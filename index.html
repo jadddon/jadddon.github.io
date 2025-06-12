@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>jadddon</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22white%22><path transform=%22rotate(180 12 12)%22 d=%22M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z%22/></svg>">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,11 +12,11 @@
     <nav id="navbar">
         <div class="container">
             <div class="nav-container">
-                <div class="logo">Your Name</div>
+                <div class="logo">jadddon</div>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
                 <div class="mobile-menu" id="mobile-menu">
                     <span></span>
@@ -30,16 +31,15 @@
     <section class="hero" id="home">
         <!-- Background Video -->
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="videos/hero-background.mp4" type="video/mp4">
+            <source src="videos/tortoise.mp4" type="video/mp4">
             <!-- Fallback for browsers that don't support video -->
         </video>
         <div class="hero-overlay"></div>
         
         <div class="container">
             <div class="hero-content">
-                <h1>Data Scientist, Software Engineer, Digital Artist</h1>
-                <p class="subtitle">Building intelligent systems and creating digital experiences at the intersection of data, code, and creativity.</p>
-                <p class="description">I work with machine learning, full-stack development, and generative art to solve complex problems and explore new forms of creative expression.</p>
+                <h1>data & software</h1>
+                <p class="subtitle">machine learning, computational design, and computational neuroscience</p>
             </div>
         </div>
     </section>
@@ -47,10 +47,10 @@
     <!-- Work Section -->
     <section id="work">
         <div class="container">
-            <h2 class="section-title">Selected Work</h2>
+            <h2 class="section-title">selected work</h2>
             
             <!-- Project 1 -->
-            <div class="work-item">
+            <div class="work-item" id="project1">
                 <div class="work-media">
                     <!-- Replace with actual video -->
                     <video class="work-video" autoplay muted loop>
@@ -82,133 +82,35 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Project 2 -->
-            <div class="work-item">
-                <div class="work-media">
-                    <div class="work-image">🌐 Web Application Demo</div>
-                </div>
-                <div class="work-info">
-                    <div class="work-meta">
-                        <h3>Collaborative Task Manager</h3>
-                        <div class="category">Full-Stack Development</div>
-                        <div class="year">2024</div>
-                        <a href="#" class="link">View Project</a>
-                    </div>
-                    <div class="work-description">
-                        <p>Built a real-time collaborative task management application with React frontend and Node.js backend. Features include live updates, drag-and-drop interfaces, and comprehensive analytics dashboards.</p>
-                        <p>Implemented WebSocket connections for real-time collaboration, PostgreSQL for data persistence, and Redis for caching. The application supports teams of up to 100 users with sub-second response times.</p>
-                        <div class="tech-stack">
-                            <h4>Technologies</h4>
-                            <div class="tech-list">
-                                <span class="tech-item">React</span>
-                                <span class="tech-item">Node.js</span>
-                                <span class="tech-item">PostgreSQL</span>
-                                <span class="tech-item">Socket.io</span>
-                                <span class="tech-item">Redis</span>
-                                <span class="tech-item">TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="work-item">
-                <div class="work-media">
-                    <div class="work-image">🎨 Generative Art Animation</div>
-                </div>
-                <div class="work-info">
-                    <div class="work-meta">
-                        <h3>Algorithmic Art Series</h3>
-                        <div class="category">Digital Art</div>
-                        <div class="year">2024</div>
-                        <a href="#" class="link">View Project</a>
-                    </div>
-                    <div class="work-description">
-                        <p>Created a collection of interactive generative art pieces exploring the relationship between mathematical patterns and visual aesthetics. Each piece responds to user input and environmental data in real-time.</p>
-                        <p>Utilized p5.js and WebGL for rendering complex particle systems and fluid simulations. The series was exhibited at local galleries and generated over 10,000 unique variations.</p>
-                        <div class="tech-stack">
-                            <h4>Technologies</h4>
-                            <div class="tech-list">
-                                <span class="tech-item">p5.js</span>
-                                <span class="tech-item">WebGL</span>
-                                <span class="tech-item">Three.js</span>
-                                <span class="tech-item">GLSL</span>
-                                <span class="tech-item">JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="work-item">
-                <div class="work-media">
-                    <div class="work-image">🤖 NLP Model Interface</div>
-                </div>
-                <div class="work-info">
-                    <div class="work-meta">
-                        <h3>Sentiment Analysis API</h3>
-                        <div class="category">Machine Learning</div>
-                        <div class="year">2023</div>
-                        <a href="#" class="link">View Project</a>
-                    </div>
-                    <div class="work-description">
-                        <p>Developed a production-ready sentiment analysis system using transformer models and BERT architecture. The API processes social media data for brand monitoring and customer feedback analysis.</p>
-                        <p>Deployed with FastAPI and containerized using Docker, handling 10,000+ requests per minute with 95% accuracy across multiple languages. Implemented comprehensive monitoring and logging systems.</p>
-                        <div class="tech-stack">
-                            <h4>Technologies</h4>
-                            <div class="tech-list">
-                                <span class="tech-item">TensorFlow</span>
-                                <span class="tech-item">BERT</span>
-                                <span class="tech-item">FastAPI</span>
-                                <span class="tech-item">Docker</span>
-                                <span class="tech-item">Kubernetes</span>
-                                <span class="tech-item">Python</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">about</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a multidisciplinary technologist passionate about the intersection of data science, software engineering, and digital art. My work spans from building machine learning systems that process millions of data points to creating interactive installations that explore algorithmic creativity.</p>
-                    <p>With a background in computer science and fine arts, I approach technical challenges with both analytical rigor and creative intuition. I believe that the most interesting solutions emerge when we combine quantitative methods with artistic sensibility.</p>
-                    <p>When I'm not coding or analyzing data, you'll find me exploring generative art techniques, contributing to open-source projects, or experimenting with new technologies that push the boundaries of what's possible.</p>
+                    <p>TK</p>
                 </div>
                 <div class="about-details">
                     <div class="about-section">
-                        <h3>Expertise</h3>
+                        <h3>foci</h3>
                         <ul>
-                            <li>Machine Learning & AI</li>
-                            <li>Full-Stack Development</li>
-                            <li>Data Visualization</li>
-                            <li>Creative Coding</li>
-                            <li>System Architecture</li>
-                            <li>Generative Art</li>
+                            <li>TK</li>
                         </ul>
                     </div>
                     <div class="about-section">
-                        <h3>Education</h3>
+                        <h3>formal education</h3>
                         <ul>
-                            <li>M.S. Computer Science</li>
-                            <li>B.A. Digital Arts</li>
+                            <li>MS Computer Science from Columbia University</li>
+                            <li>BA Economics from Washington University in St. Louis</li>
                         </ul>
                     </div>
                     <div class="about-section">
-                        <h3>Currently</h3>
+                        <h3>currently</h3>
                         <ul>
-                            <li>Senior Data Scientist</li>
-                            <li>Freelance Developer</li>
-                            <li>Digital Artist</li>
+                            <li>Data and Insights Group at The New York Times</li>
                         </ul>
                     </div>
                 </div>
@@ -219,14 +121,13 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">contact</h2>
             <div class="contact-content">
-                <p class="contact-text">I'm always interested in discussing new projects, creative collaborations, or opportunities to work on challenging problems. Let's connect and explore what we might create together.</p>
                 <div class="contact-links">
-                    <a href="mailto:your.email@domain.com" class="contact-link">your.email@domain.com</a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-link">LinkedIn</a>
-                    <a href="https://github.com/yourusername" class="contact-link">GitHub</a>
-                    <a href="https://twitter.com/yourusername" class="contact-link">Twitter</a>
+                    <a href="mailto:your.email@domain.com" class="contact-link">jadonyariv at proton dot me</a>
+                    <a href="https://linkedin.com/in/jadonyariv" class="contact-link">linkedIn</a>
+                    <a href="https://github.com/jadddon" class="contact-link">github</a>
+                    <a href="https://signal.me/#eu/uVMTGmWvfBq18zxLNXuSl1SSFSYQyMt-QQMsM7rLEVIDE_rPs5hA96wETlIZlRcV" class="contact-link">signal</a>
                 </div>
             </div>
         </div>
@@ -236,11 +137,11 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>&copy; 2025 Your Name</div>
+                <div>&copy; 2025 jadddon</div>
                 <div class="footer-links">
-                    <a href="#work">Work</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#work">work</a>
+                    <a href="#about">about</a>
+                    <a href="#contact">contact</a>
                 </div>
             </div>
         </div>
